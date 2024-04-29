@@ -1,6 +1,6 @@
 app:
   title: Janus IDP Backstage Showcase
-  baseUrl: http://localhost:3000
+  baseUrl: https://redhat-developer-hub-devhub.apps.cluster-27wfc.27wfc.sandbox800.opentlc.com
   branding:
     fullLogo: ${BASE64_EMBEDDED_FULL_LOGO}
     iconLogo: ${BASE64_EMBEDDED_ICON_LOGO}
@@ -27,7 +27,7 @@ backend:
   # auth:
   #   keys:
   #     - secret: ${BACKEND_AUTH_SECRET}
-  baseUrl: http://localhost:7007
+  baseUrl: https://redhat-developer-hub-devhub.apps.cluster-27wfc.27wfc.sandbox800.opentlc.com/
   listen:
     port: 7007
     # Uncomment the following host directive to bind to specific interfaces
@@ -47,7 +47,7 @@ backend:
       # Allow your Jira instance for @roadiehq/backstage-plugin-jira
       - ${JIRA_URL}
   cors:
-    origin: http://localhost:3000
+    origin: https://redhat-developer-hub-devhub.apps.cluster-27wfc.27wfc.sandbox800.opentlc.com/
     methods: [GET, HEAD, PATCH, POST, PUT, DELETE]
     credentials: true
   # This is for local development only, it is not recommended to use this in production
